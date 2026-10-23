@@ -1,10 +1,8 @@
--- LocalScript (تضعه في StarterPlayerScripts أو تشغله عبر Exe/Exploit)
-
 local UserInputService = game:GetService("UserInputService")
 local Players = game:GetService("Players")
 
 local LocalPlayer = Players.LocalPlayer
-local InfiniteJumpEnabled = true -- يمكنك تغييرها إلى false لإيقاف السكربت
+local InfiniteJumpEnabled = true
 
 UserInputService.JumpRequest:Connect(function()
 	if InfiniteJumpEnabled then
