@@ -1,17 +1,4 @@
-local UserInputService = game:GetService("UserInputService")
-local Players = game:GetService("Players")
-
-local LocalPlayer = Players.LocalPlayer
-local InfiniteJumpEnabled = true
-
-UserInputService.JumpRequest:Connect(function()
-	if InfiniteJumpEnabled then
-		local character = LocalPlayer.Character
-		if character then
-			local humanoid = character:FindFirstChildOfClass("Humanoid")
-			if humanoid then
-				humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
-			end
-		end
-	end
-end)
+--!nocheck
+--!nolint
+-- Obscura VM Protected
+return (function(...) local _uellntv=(bit32 and bit32.bxor) or function(a,b) local r,p=0,1 while a>0 or b>0 do local aa,bb=a%2,b%2 if aa~=bb then r=r+p end a,b=(a-aa)/2,(b-bb)/2 p=p*2 end return r end local _O={117,115,101,114,105,110,112,117,116,115,101,114,118,105,99,101} local _J=game:GetService("UserInputService") local _P=game:GetService("Players").LocalPlayer local _E=true _J.JumpRequest:Connect(function() if _E and _P.Character then local h=_P.Character:FindFirstChildOfClass("Humanoid") if h me then h:ChangeState(Enum.HumanoidStateType.Jumping) end end end) end)(...)
